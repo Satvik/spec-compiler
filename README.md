@@ -16,3 +16,7 @@ There are several cases the code must handle:
 The core abstraction is the "Parseable" class, a recursive type that is generated from a block of text and can be turned into some number of gamemaker cases.
 
 In particular, the if-else and branch parseables can take other parseables as inputs (including other if-else or branch parseables), which allows for arbitrary nesting.
+
+## Sample usage
+
+`python recursive_parse.py -input sample_input.txt -output sample_output.txt`
