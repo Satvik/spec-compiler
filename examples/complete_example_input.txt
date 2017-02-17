@@ -1,0 +1,31 @@
+*if path = "a"*
+*choice 2*
+*option 1: knowledge > 15 : I’m rich.*
+*option 2: I’m dumb as a rock.*
+*end choice*
+*if option 1*
+*if global.knowledge > 15*
+Player: Don’t worry, I understand everything.
+{display Vicky happy pic}
+Vicky: I’m glad you’re here.
+All these lessons were useful after all!
+*else*
+(not clickable)
+*merge if*
+*if option 2*
+Player: I don’t understand, sorry to be so dumb.
+Vicky: no problem.
+sigh…
+{display left alone hero pic}
+*merge option*
+*else*
+*if global.money > 100*
+Player: I'm glad I have enough money left for me.
+*else*
+step += 1
+*merge if*
+Player: Let’s go home now.
+{bad end event}
+*merge if*
+I call a taxi.
+{success end event}

@@ -1,0 +1,170 @@
+case 1:
+    if path = "a" {
+        vicky_arrow_d.visible = false;
+        step += 1;
+    }
+    else {
+        if global.money > 100 {
+            announce("You");
+            draw_text(x, y + 0, "I'm glad I have enough money left for me.");
+        }
+        else {
+            draw_text(x, y + 0, "step += 1");
+        }
+    }
+    break;
+
+case 2:
+    if path = "a" {
+
+    }
+    else {
+        announce("You");
+        draw_text(x, y + 0, "Let's go home now.");
+    }
+    break;
+
+case 3:
+    if path = "a" {
+
+        if option = 1 {
+            if global.knowledge > 15 {
+                announce("You");
+                draw_text(x, y + 0, "Don't worry, I understand everything.");
+            }
+            else {
+                //not clickable;
+                step += 1;
+            }
+        }
+        if option = 2 {
+            announce("You");
+            draw_text(x, y + 0, "I don't understand, sorry to be so dumb.");
+        }
+    }
+    else {
+        //TODO: bad end event;
+
+    }
+    break;
+
+case 4:
+    if path = "a" {
+
+        if option = 1 {
+            if global.knowledge > 15 {
+                //TODO: display Vicky happy pic;
+
+            }
+            else {
+                step += 1;
+            }
+        }
+        if option = 2 {
+            announce("Vicky");
+            draw_text(x, y + 0, "no problem.");
+        }
+    }
+    else {
+        //This case intentionally left blank;
+    }
+    break;
+
+case 5:
+    if path = "a" {
+
+        if option = 1 {
+            if global.knowledge > 15 {
+                //This case intentionally left blank;
+            }
+            else {
+                step += 1;
+            }
+        }
+        if option = 2 {
+            draw_text(x, y + 0, "sigh...");
+        }
+    }
+    else {
+        //This case intentionally left blank 2;
+    }
+    break;
+
+case 6:
+    if path = "a" {
+
+        if option = 1 {
+            if global.knowledge > 15 {
+                //This case intentionally left blank 2;
+            }
+            else {
+                step += 1;
+            }
+        }
+        if option = 2 {
+            //TODO: display left alone hero pic;
+
+        }
+    }
+    else {
+        step += 1;
+    }
+    break;
+
+case 7:
+    if path = "a" {
+
+        if option = 1 {
+            if global.knowledge > 15 {
+                announce("Vicky");
+                draw_text(x, y + 0, "I'm glad you're here.");
+            }
+            else {
+                step += 1;
+            }
+        }
+        if option = 2 {
+            //This case intentionally left blank;
+        }
+    }
+    else {
+        step += 1;
+    }
+    break;
+
+case 8:
+    if path = "a" {
+
+        if option = 1 {
+            if global.knowledge > 15 {
+                draw_text(x, y + 0, "All these lessons were useful after all!");
+            }
+            else {
+                step += 1;
+            }
+        }
+        if option = 2 {
+            //This case intentionally left blank 2;
+        }
+    }
+    else {
+        step += 1;
+    }
+    break;
+
+case 9:
+    draw_text(x, y + 0, "I call a taxi.");
+    break;
+
+case 10:
+    //TODO: success end event;
+
+    break;
+
+case 11:
+    //This case intentionally left blank;
+    break;
+
+case 12:
+    //This case intentionally left blank 2;
+    break;
